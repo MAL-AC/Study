@@ -2,6 +2,8 @@
 # Пользователь в первой строке вводит натуральное число N – количество элементов в массиве. 
 # В последующих  строках записаны N целых чисел Ai. Последняя строка содержит число X
 
+# Var1
+
 # import random
 # size = int(input('Input quantity of numbers: '))
 # min_num = int(input('Input a min number: '))
@@ -20,6 +22,8 @@
        
 # print(f'The number {x} occurs {count} times')
 
+# Var2
+# count = my_list.count(number)
 
 # Задача 18: Требуется найти в массиве A[1..N] самый близкий по величине элемент к заданному числу X. 
 # Пользователь в первой строке вводит натуральное число N – количество элементов в массиве. 
@@ -74,3 +78,22 @@
 #         if i in v:
 #             summ += k
 # print(f"Цена слова: {summ}")
+
+# Var 2
+# print(f"Ценность слова: {sum([v for symbol in word for k, v in dict.items() if symbol.upper() in k])}")
+
+# Var 3
+# points_en = {1: 'AEIOULNSTR', 2: 'DG', 3: 'BCMP', 4: 'FHVWY', 5: 'K', 8: 'JZ', 10: 'QZ'}
+# points_ru = {1: 'АВЕИНОРСТ', 2: 'ДКЛМПУ', 3: 'БГЁЬЯ', 4: 'ЙЫ', 5: 'ЖЗХЦЧ', 8: 'ШЭЮ', 10: 'ФЩЪ'}
+# word = input().upper()  # переводим все буквы в верхний регистр
+# count = 0
+# for i in word:
+#     if i in 'QWERTYUIOPASDFGHJKLZXCVBNM':
+#         for j in points_en:
+#             if i in points_en[j]:
+#                 count = count + j
+#     else:
+#         for j in points_en:
+#             if i in points_ru[j]:
+#                 count = count + j
+# print(count)
