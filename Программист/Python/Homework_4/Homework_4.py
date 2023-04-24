@@ -3,13 +3,13 @@
 # Пользователь вводит 2 числа. n — кол-во элементов первого множества.
 # m — кол-во элементов второго множества. Затем пользователь вводит сами элементы множеств
 
-# import random
-# list1 ={random.randint(1,10) for _ in range(10)}
-# print(list1)
-# list2 ={random.randint(1,10) for _ in range(10)}
-# print(list2)
-#
-# print(list1 & list2)
+import random
+list1 ={random.randint(1,10) for _ in range(10)}
+print(list1)
+list2 ={random.randint(1,10) for _ in range(10)}
+print(list2)
+
+print(list1 & list2)
 
 
 # Задача 24: В фермерском хозяйстве в Карелии выращивают чернику. Она растёт на круглой грядке,
