@@ -114,13 +114,13 @@
 
 # Var 4
 
-def revers_list(n):
-    if n == 1:
-        return '1'
-    else:
-        return f'{n} -> {revers_list(n-1)}'
-
-num = int(input('Type your N:'))
-print(revers_list(num))
+# def revers_list(n):
+#     if n == 1:
+#         return '1'
+#     else:
+#         return f'{n} -> {revers_list(n-1)}'
+#
+# num = int(input('Type your N:'))
+# print(revers_list(num))
 
 #     return('1' if n ==1 else f'{n}  {revers_list(n-1)}')

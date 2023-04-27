@@ -16,6 +16,7 @@
 # num = [1,2,3]
 # alfa = ['a','b','c','d']
 # sravnit(num,alfa)
+import string
 
 # 2. Написать функцию, которая будет возвращать список созданный по заданным критериям:
 # размер, минимальное и максимальное значение, наличие повторяющихся элементов
@@ -55,3 +56,17 @@
 
 
 # 4. Функция принимает предложение, вычислzет какой буквы в этом предложении больше и возdращает эту букву и процент ее вхождения предложение
+
+text = input('Input a text: ')
+def count_letters(text: str) -> tuple:
+    for c in string.punctuation +' ':
+        text = text.replace(c, '')
+
+    dict_count ={}
+    for c in text:
+        dict_count[c] = dict_count.get(c, 0) + 1
+    max_c = max(dict_count.keys(), key=lambda x: dict_count.get(x))
+    return max_c, str(round(dict_count.get(max_c)/len(text)*100, 2)) + '%'
+
+print(count_letters(text), sep=', ')
+
