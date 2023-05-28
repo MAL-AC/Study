@@ -109,7 +109,14 @@ def work_with_phonebook():
             file_name = get_file_name()
             write_txt(file_name, phone_book)
             print('Справочник сохранен в текстовом формате')
+        elif choice ==6:
+            name = get_search_name()
+            print('Результаты поиска: ')
+            show_phonebook(find_by_name(phone_book, name))
+
+
         choice = show_menu()
+
 
 
 if __name__ == "__main__":
