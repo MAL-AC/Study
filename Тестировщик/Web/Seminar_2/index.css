@@ -1,0 +1,18 @@
+h1{
+    color: red;
+}
+h2{
+    color: yellow;
+}
+a{
+    color: green;
+}
+body{
+    background-color: rgb(117, 117, 218);
+}
+img{
+    width: 500px;
+}
+.bigtext{
+    font-size: 1.5em;
+}
