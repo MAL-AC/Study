@@ -12,7 +12,7 @@ public class Main {
 
 
         while (true) {
-            System.out.println("Задание 1: Вычислить n-ое треугольного число (сумма чисел от 1 до n), n! (произведение чисел от 1 до n).");
+            System.out.println("\nЗадание 1: Вычислить n-ое треугольного число (сумма чисел от 1 до n), n! (произведение чисел от 1 до n).");
             System.out.println("Задание 2: Вывести все простые числа от 1 до 1000.");
             System.out.println("Задание 3: Реализовать простой калькулятор.");
             System.out.println("Задание 4: Восстановить выражение до верного равенства.");
@@ -28,9 +28,10 @@ public class Main {
                 task3();
             }
             else if (no == 4) {
-                task1();
+                task4();
             }
             else if(no == 0) {
+                System.out.println("Вы вышли из домашней работы.");
                 break;
             }
             else {
@@ -111,12 +112,12 @@ public class Main {
             for (int k = 1; k < 10; k++) {
                 if ((a * 10 + i) + (k * 10 + b) == c) {
                     count += 1;
-                    System.out.println("Решение: " + (a * 10 + i) + "+" + (k * 10 + b) + "=" + c);
+                    System.out.println("Решение: " + (a * 10 + i) + " + " + (k * 10 + b) + " = " + c);
                 }
             }
         }
         if (count == 0) {
-            System.out.println("Решения нет");
+            System.out.println("Решения нет.");
         }
 
 
