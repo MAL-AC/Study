@@ -94,6 +94,7 @@ public class Main {
                 a /= b;
             } else if (oper == 'e' || oper == 'е') {
                 System.out.println("Вы вышли из калькулятора");
+                scanner.nextLine();
                 break;
             } else {
                 System.out.println("Вы ввели неверное действие!");
