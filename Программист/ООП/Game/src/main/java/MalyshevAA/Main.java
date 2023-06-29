@@ -1,16 +1,21 @@
 package MalyshevAA;
 
 public class Main {
+
     public static void main(String[] args) {
 
         Cat cat = new Cat("Barsik");
-        Cat cat1 = new Cat("Pyshok");
-        Tiger tiger = new Tiger("Ax");
+        Cat cat1 = new Cat("Persik");
+        Tiger tiger = new Tiger("Tiger");
+//        Pet petya = new Pet(2);
 
-        cat.getAge();
+        cat1.getAge();
         cat1.setAge(3);
-        Cat.isaCat();
+        Cat.isACat();
+        Cat.isBlack = true;
 
+        System.out.println(tiger);
 
     }
+
 }
