@@ -1,5 +1,7 @@
 package MalyshevAA;
 
+import java.util.Random;
+
 public abstract class Unit {
     private String name;
 
@@ -24,9 +26,9 @@ public abstract class Unit {
         return health;
     }
 
-    public String getName() {
-        return name;
-    }
+//    public String getName() {
+//        return name;
+//    }
 
     public int getPhysicalAttack() {
         return physicalAttack;
@@ -42,5 +44,12 @@ public abstract class Unit {
 
     public int getSpeed() {
         return speed;
+    }
+
+    String getInfo(){
+        return this.getName();
+    }
+    String getName(){
+        return Names.values()[ new Random().nextInt( Names.values().length ) ].toString();
     }
 }
