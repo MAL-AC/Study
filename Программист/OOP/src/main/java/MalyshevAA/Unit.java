@@ -1,55 +1,57 @@
 package MalyshevAA;
 
+import java.util.ArrayList;
 import java.util.Random;
 
-public abstract class Unit {
+public abstract class Unit implements Interface {
     private String name;
-
-    private int physicalAttack;
-    private int physicalDefense;
-    private int magicDefense;
-    private int health;
+    private int damage;
+    private int maxHp;
+    private int hp;
     private int speed;
+    Coordinates coordinates;
 
-    public Unit(String name, int physicalAttack, int physicalDefense,
-                int magicDefense, int health, int speed) {
+    public Unit(String name, int damage, int maxHp, int hp, int speed, int x, int y) {
         this.name = name;
-        this.physicalAttack = physicalAttack;
-        this.physicalDefense = physicalDefense;
-        this.magicDefense = magicDefense;
-        this.health = health;
+        this.damage = damage;
+        this.maxHp = maxHp;
+        this.hp = hp;
         this.speed = speed;
+        coordinates = new Coordinates(x,y);
 
     }
-
-    public int getHealth() {
-        return health;
+    @Override
+    public String getInfo() {
+        return String.format("name:%s hp:%d", name, hp);
+    }
+    public Unit nearest(ArrayList<Unit> units) {
+        double nearestDistance = Double.MAX_VALUE;
+        Unit nearestEnemy = null;
+        for (int i = 0; i < units.size(); i++) {
+            if(coordinates.countDistance(units.get(i).coordinates) < nearestDistance) {
+                nearestEnemy = units.get(i);
+                nearestDistance = coordinates.countDistance(units.get(i).coordinates);
+            }
+        }
+        return nearestEnemy;
+    }
+    public void HP_damage(int damage) {
+        hp -= damage;
+        if (hp < 0) hp = 0;
+        if (hp > maxHp) hp = maxHp;
     }
 
-//    public String getName() {
-//        return name;
-//    }
-
-    public int getPhysicalAttack() {
-        return physicalAttack;
+    public int getHp() {
+        return hp;
+    }
+    public String getName() {
+        return name;
+    }
+    public int getDamage() {
+        return damage;
     }
 
-    public int getMagicDefense() {
-        return magicDefense;
-    }
-
-    public int getPhysicalDefense() {
-        return physicalDefense;
-    }
-
-    public int getSpeed() {
-        return speed;
-    }
-
-    String getInfo(){
-        return this.getName();
-    }
-    String getName(){
-        return Names.values()[ new Random().nextInt( Names.values().length ) ].toString();
+    public static setName() {
+        this.name = Names.values()[ new Random().nextInt(Names.values().length ) ].toString();
     }
 }

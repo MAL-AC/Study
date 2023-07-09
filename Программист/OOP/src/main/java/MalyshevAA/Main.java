@@ -26,7 +26,7 @@ public class Main {
                 case 3 -> team.add(new Robber(Names.values()[ new Random().nextInt( Names.values().length ) ].toString()));
                 case 4 -> team.add(new Sniper(Names.values()[ new Random().nextInt( Names.values().length ) ].toString()));
                 case 5 -> team.add(new Spearman(Names.values()[ new Random().nextInt( Names.values().length ) ].toString()));
-                case 6 -> team.add(new Сrossbowman(Names.values()[ new Random().nextInt( Names.values().length ) ].toString()));
+                case 6 -> team.add(new Сrossbowman(set));
             }
 
         }
