@@ -1,14 +1,8 @@
 package MalyshevAA;
 
 public abstract class ClassSuppurt extends Unit{
-    public int delivery;
-    public ClassSuppurt(String name, int physicalAttack, int physicalDefense,
-                        int magicDefense, int health, int speed, int delivery) {
-        super(name, physicalAttack, physicalDefense, magicDefense, health, speed);
-        this.delivery = delivery;
+    public ClassSuppurt(String name, int damage, int maxHp, int hp, int speed, int x, int y) {
+        super(name, damage, maxHp, hp, speed, x, y);
     }
 
-    public int getDelivery() {
-        return delivery;
-    }
 }

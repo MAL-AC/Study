@@ -20,10 +20,12 @@ public abstract class Unit implements Interface {
         coordinates = new Coordinates(x,y);
 
     }
+
     @Override
     public String getInfo() {
-        return String.format("name:%s hp:%d", name, hp);
+        return String.format("%s hp:%d", name, hp);
     }
+
     public Unit nearest(ArrayList<Unit> units) {
         double nearestDistance = Double.MAX_VALUE;
         Unit nearestEnemy = null;
@@ -40,18 +42,19 @@ public abstract class Unit implements Interface {
         if (hp < 0) hp = 0;
         if (hp > maxHp) hp = maxHp;
     }
-
     public int getHp() {
         return hp;
     }
-    public String getName() {
-        return name;
-    }
+
     public int getDamage() {
         return damage;
     }
 
-    public static setName() {
-        this.name = Names.values()[ new Random().nextInt(Names.values().length ) ].toString();
+    public static String setName() {
+        return (Names.values()[new Random().nextInt(Names.values().length)].toString());
+    }
+
+    public String getName() {
+        return name;
     }
 }

@@ -3,15 +3,8 @@ package MalyshevAA;
 import java.util.Random;
 
 public abstract class ClassMagic extends Unit {
-    public int magicAttack;
-
-    public ClassMagic(String name, int physicalAttack, int physicalDefense,int magicDefense, int health, int speed, int magicAttack) {
-        super(name, physicalAttack, physicalDefense, magicDefense, health, speed);
-        this.magicAttack = magicAttack;
-    }
-
-    public int getMagicAttack() {
-        return magicAttack;
+    public ClassMagic(String name, int damage, int maxHp, int hp, int speed, int x, int y) {
+        super(name, damage, maxHp, hp, speed, x, y);
     }
 }
 

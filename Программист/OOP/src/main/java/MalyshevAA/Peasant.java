@@ -1,13 +1,14 @@
 package MalyshevAA;
 
+import java.util.ArrayList;
+
 public class Peasant extends ClassSuppurt{
-    public Peasant(String name){
-        super(name,
-                1,
-                4,
-                2,
-                4,
-                3,
-                2);
+    public Peasant(String name, int x, int y) {
+        super(name, 0, 10, 10, 5, x, y);
+    }
+
+    @Override
+    public void step(ArrayList<Unit> units, ArrayList<Unit> team) {
+
     }
 }
