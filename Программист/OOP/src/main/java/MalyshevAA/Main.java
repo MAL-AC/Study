@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 11; i++) {
             int val = new Random().nextInt(7);
             switch (val) {
                 case 0 -> team1.add(new Mag(Unit.setName(),1, i));
@@ -26,7 +26,7 @@ public class Main {
             }
         }
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 11; i++) {
             int val = new Random().nextInt(7);
             switch (val) {
                 case 0 -> team2.add(new Mag(Unit.setName(),10, i));
@@ -49,9 +49,6 @@ public class Main {
         allTeam.addAll(team2);
         allTeam.sort(Comparator.comparing(Unit::getSpeed));
         Collections.reverse(allTeam);
-        for (Unit unit:allTeam) {
-            System.out.println(unit.getSpeed());
-        }
         team1.sort(Comparator.comparing(Unit::getSpeed));
         Collections.reverse(team1);
         team2.sort(Comparator.comparing(Unit::getSpeed));
