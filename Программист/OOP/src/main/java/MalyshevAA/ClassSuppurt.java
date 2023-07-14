@@ -10,9 +10,6 @@ public abstract class ClassSuppurt extends Unit{
         public boolean getStandBy(){
         return standby;
     };
-    @Override
-    public void step(ArrayList<Unit> units, ArrayList<Unit> team) {
-        if (getState() == "dead") return;
-    }
+
 
 }

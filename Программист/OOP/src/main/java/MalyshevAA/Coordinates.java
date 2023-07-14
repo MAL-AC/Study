@@ -1,15 +1,18 @@
 package MalyshevAA;
 
-public class Coordinates {
-    int x, y;
+import java.util.ArrayList;
 
-    public Coordinates() {
-        this.x = x;
-        this.y = y;
-    }
+public class Coordinates extends ArrayList<Integer> {
+    int x, y;
+    ArrayList<Integer> xy = new ArrayList<>();
 
     public Coordinates(int x, int y) {
+        this.x = x;
+        this.y = y;
+        xy.add(0, x);
+        xy.add(1, y);
     }
+
 
     public double countDistance(Coordinates coordinates) {
         int dx = coordinates.x - x;

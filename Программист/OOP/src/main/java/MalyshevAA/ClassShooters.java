@@ -28,10 +28,9 @@ public abstract class ClassShooters extends Unit {
                 }
             }
         }
-        nearest(units).HP_damage(doShootDamage());
-
-        shoots -= 1;
-        return;
+            nearest(units).HP_damage(doShootDamage());
+            shoots -= 1;
+            return;
     }
 
     @Override

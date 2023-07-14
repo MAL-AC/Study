@@ -20,22 +20,24 @@ public abstract class Unit implements Interface {
         this.hp = hp;
         this.speed = speed;
 
-        coordinates = new Coordinates(x,y);
+        coordinates = new Coordinates(x, y);
 
     }
 
     @Override
     public String getInfo() {
-        return String.format("%s %s hp:%d",getType(), name, hp);
+        return String.format("%s %s hp:%d", getType(), name, hp);
     }
 
     public Unit nearest(ArrayList<Unit> units) {
         double nearestDistance = Double.MAX_VALUE;
         Unit nearestEnemy = null;
         for (int i = 0; i < units.size(); i++) {
-            if(coordinates.countDistance(units.get(i).coordinates) < nearestDistance) {
-                nearestEnemy = units.get(i);
-                nearestDistance = coordinates.countDistance(units.get(i).coordinates);
+            if (coordinates.countDistance(units.get(i).coordinates) < nearestDistance) {
+                if (units.get(i).getState() == "alive") {
+                    nearestEnemy = units.get(i);
+                    nearestDistance = coordinates.countDistance(units.get(i).coordinates);
+                }
             }
         }
         return nearestEnemy;
@@ -56,7 +58,8 @@ public abstract class Unit implements Interface {
     public String getName() {
         return name;
     }
-    public String getType(){
+
+    public String getType() {
         return "";
     }
 
@@ -64,17 +67,24 @@ public abstract class Unit implements Interface {
         return speed;
     }
 
+    public int getMaxHp() {
+        return maxHp;
+    }
 
     public String getState() {
         if (getHp() > 1) return "alive";
         else return "dead";
     }
+
     public void HP_damage(int damage) {
         hp -= damage;
-        if (hp < 0){
+        if (hp < 0) {
             hp = 0;
         }
         if (hp > maxHp) hp = maxHp;
     }
 
+    public ArrayList<Integer> getCoords() {
+        return coordinates.xy;
+    }
 }
