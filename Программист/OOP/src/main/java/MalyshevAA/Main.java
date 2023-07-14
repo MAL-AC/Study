@@ -1,10 +1,13 @@
 package MalyshevAA;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Random;
 import java.util.jar.Attributes;
 
 import static java.lang.Character.getName;
+import static java.lang.Character.getType;
 
 public class Main {
     public static void main(String[] args) {
@@ -38,14 +41,27 @@ public class Main {
 
         System.out.println("Team1: ");
         team1.forEach(n-> System.out.println(n.getInfo()));
+        System.out.println("\nTeam2: ");
+        team2.forEach(n-> System.out.println(n.getInfo()));
+
+//        ArrayList<Unit> allTeam = new ArrayList<>();
+//        allTeam.addAll(team1);
+//        allTeam.addAll(team2);
+//        allTeam.sort(Comparator.comparing(Unit::getSpeed));
+//        Collections.reverse(allTeam);
+//        for (Unit unit:allTeam) {
+//            System.out.println(unit.getSpeed());
+//        }
+
+
 
         team1.forEach(n-> n.step(team2, team1));
         team2.forEach(n-> n.step(team1, team2));
 
-        System.out.println("Team1 урон: ");
+        System.out.println("\nTeam1 урон: ");
         team1.forEach(n-> System.out.println(n.getInfo()));
 
-        System.out.println("Team2 урон: ");
+        System.out.println("\nTeam2 урон: ");
         team2.forEach(n-> System.out.println(n.getInfo()));
     }
 }

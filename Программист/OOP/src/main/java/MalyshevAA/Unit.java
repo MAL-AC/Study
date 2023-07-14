@@ -57,4 +57,11 @@ public abstract class Unit implements Interface {
     public String getName() {
         return name;
     }
+    public String getType(){
+        return "null";
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
 }

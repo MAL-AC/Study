@@ -9,6 +9,8 @@ public class Peasant extends ClassSuppurt{
 
     @Override
     public void step(ArrayList<Unit> units, ArrayList<Unit> team) {
-
+    }
+    public String type(){
+        return "Peasant";
     }
 }

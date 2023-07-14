@@ -7,9 +7,9 @@ public class Sniper extends ClassShooters{
         super(name, 12, 100, 100, 300, 5, x, y);
     }
 
-    @Override
-    public void step(ArrayList<Unit> units, ArrayList<Unit> team) {
-
-    }
+//    @Override
+//    public void step(ArrayList<Unit> units, ArrayList<Unit> team) {
+//
+//    }
 }
 

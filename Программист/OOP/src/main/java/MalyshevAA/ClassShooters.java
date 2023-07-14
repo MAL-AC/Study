@@ -1,6 +1,7 @@
 package MalyshevAA;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public abstract class ClassShooters extends Unit {
     private int shoots;
@@ -10,19 +11,25 @@ public abstract class ClassShooters extends Unit {
         this.shoots = shoots;
     }
 
+        public int doShootDamage(){
+        return getDamage();
+        }
 
     @Override
     public void step(ArrayList<Unit> units, ArrayList<Unit> team) {
         if (getHp() == 0 || this.shoots == 0) return;
         Unit tmp = nearest(units);
         for (Unit unit : team) {
-            if (unit.getClass().equals("class MalyshevAA.Spearman")) {
-                shoots++;
-                break;
+            if (unit.getType().equals("Peasant")&& unit.getHp() > 0 )
+//            if (team.contains(getClass(Peasant)))
+            {
+                    shoots++;
+                    break;
             }
         }
-        tmp.HP_damage(getDamage());
+        nearest(units).HP_damage(doShootDamage());
         shoots -= 1;
+        return;
     }
 
     @Override
@@ -30,3 +37,4 @@ public abstract class ClassShooters extends Unit {
         return String.format("%s hp:%d shoots:%d", getName(), getHp(), shoots);
     }
 }
+
