@@ -54,6 +54,7 @@ public class Main {
         team2.sort(Comparator.comparing(Unit::getSpeed));
         Collections.reverse(team2);
 
+
         Scanner in = new Scanner(System.in);
 //        while (true) {
 //            in.nextLine();
@@ -85,7 +86,7 @@ public class Main {
     }
     static boolean isTeamDie(ArrayList<Unit> team) {
         for (Unit hero: team) {
-            if (hero.getHp()>0) return false;
+            if (hero.getState()=="alive") return false;
         }
         return true;
     }

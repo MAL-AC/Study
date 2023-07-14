@@ -7,7 +7,7 @@ public class Mag extends ClassMagic {
     private int heal;
     public Mag(String name, int x, int y) {
         super(name, 10, 100, 100, 3, x,y);
-        this.heal = -10;
+        this.heal = -5;
     }
 
     public int getHeal() {
@@ -20,7 +20,7 @@ public class Mag extends ClassMagic {
             float min_XP = Integer.MAX_VALUE;
             int index = 0;
             for (int i = 0; i < team.size(); i++) {
-                if ((float) (team.get(i).getHp() / getMaxHp()) < min_XP) {
+                if ((float) (team.get(i).getHp() / getMaxHp()) < min_XP && team.get(i).getState()=="alive") {
                     min_XP = (float) (team.get(i).getHp() / getMaxHp());
                     index = i;
                 }
