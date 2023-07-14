@@ -7,8 +7,8 @@ public class Сrossbowman extends ClassShooters {
         super(name, 10, 100, 100, 8, 5, x, y);
     }
 
-//    @Override
-//    public void step(ArrayList<Unit> units, ArrayList<Unit> team) {
-//
-//    }
+    @Override
+    public String getType(){
+        return "Crossbowman";
+    }
 }

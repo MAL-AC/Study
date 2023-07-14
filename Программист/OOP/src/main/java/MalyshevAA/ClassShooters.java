@@ -20,14 +20,17 @@ public abstract class ClassShooters extends Unit {
         if (getHp() == 0 || this.shoots == 0) return;
         Unit tmp = nearest(units);
         for (Unit unit : team) {
-            if (unit.getType().equals("Peasant")&& unit.getHp() > 0 )
+            if (unit.getType().equals("Peasant")&& unit.getHp()>0)
 //            if (team.contains(getClass(Peasant)))
             {
-                    shoots++;
-                    break;
+                if (unit.getHp()>0){
+                shoots++;
+                break;
             }
         }
+            }
         nearest(units).HP_damage(doShootDamage());
+
         shoots -= 1;
         return;
     }

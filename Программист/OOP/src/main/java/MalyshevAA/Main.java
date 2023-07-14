@@ -29,13 +29,13 @@ public class Main {
         for (int i = 0; i < 10; i++) {
             int val = new Random().nextInt(7);
             switch (val) {
-                case 0 -> team2.add(new Mag("Mag: "+Unit.setName(),5, val +1));
-                case 1 -> team2.add(new Monk("Monk: "+Unit.setName(),5, val +1));
-                case 2 -> team2.add(new Peasant("Peasant: "+Unit.setName(),5, val +1));
-                case 3 -> team2.add(new Robber("Robber: "+Unit.setName(),5, val +1));
-                case 4 -> team2.add(new Sniper("Sniper: "+Unit.setName(),5, val +1));
-                case 5 -> team2.add(new Spearman("Spearman: "+Unit.setName(),5, val +1));
-                case 6 -> team2.add(new Сrossbowman("Сrossbowman: "+Unit.setName(),5, val +1));
+                case 0 -> team2.add(new Mag(Unit.setName(),10, val +1));
+                case 1 -> team2.add(new Monk(Unit.setName(),10, val +1));
+                case 2 -> team2.add(new Peasant(Unit.setName(),10, val +1));
+                case 3 -> team2.add(new Robber(Unit.setName(),10, val +1));
+                case 4 -> team2.add(new Sniper(Unit.setName(),10, val +1));
+                case 5 -> team2.add(new Spearman(Unit.setName(),10, val +1));
+                case 6 -> team2.add(new Сrossbowman(Unit.setName(),10, val +1));
             }
         }
 
@@ -44,19 +44,19 @@ public class Main {
         System.out.println("\nTeam2: ");
         team2.forEach(n-> System.out.println(n.getInfo()));
 
-//        ArrayList<Unit> allTeam = new ArrayList<>();
-//        allTeam.addAll(team1);
-//        allTeam.addAll(team2);
-//        allTeam.sort(Comparator.comparing(Unit::getSpeed));
-//        Collections.reverse(allTeam);
-//        for (Unit unit:allTeam) {
-//            System.out.println(unit.getSpeed());
-//        }
+        ArrayList<Unit> allTeam = new ArrayList<>();
+        allTeam.addAll(team1);
+        allTeam.addAll(team2);
+        allTeam.sort(Comparator.comparing(Unit::getSpeed));
+        Collections.reverse(allTeam);
+        for (Unit unit:allTeam) {
+            System.out.println(unit.getSpeed());
+        }
 
 
 
-        team1.forEach(n-> n.step(team2, team1));
-        team2.forEach(n-> n.step(team1, team2));
+        allTeam.forEach(n-> n.step(team2, team1));
+        allTeam.forEach(n-> n.step(team1, team2));
 
         System.out.println("\nTeam1 урон: ");
         team1.forEach(n-> System.out.println(n.getInfo()));

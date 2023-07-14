@@ -23,7 +23,7 @@ public abstract class Unit implements Interface {
 
     @Override
     public String getInfo() {
-        return String.format("%s hp:%d", name, hp);
+        return String.format("%s %s hp:%d",getType(), name, hp);
     }
 
     public Unit nearest(ArrayList<Unit> units) {
@@ -58,7 +58,7 @@ public abstract class Unit implements Interface {
         return name;
     }
     public String getType(){
-        return "null";
+        return "";
     }
 
     public int getSpeed() {

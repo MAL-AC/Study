@@ -1,0 +1,5 @@
+usrlocalopenvpn_asscriptssacli --key cs.priv_key --value_file etcletsencryptliveexample.comprivkey.pem ConfigPut
+
+usrlocalopenvpn_asscriptssacli --key cs.cert --value_file etcletsencryptliveexample.comfullchain.pem ConfigPut
+
+usrlocalopenvpn_asscriptssacli start

@@ -13,4 +13,8 @@ public class Spearman extends ClassInfantry {
     public void step(ArrayList<Unit> units, ArrayList<Unit> team) {
 
     }
+    @Override
+    public String getType(){
+        return "Spearman";
+    }
 }

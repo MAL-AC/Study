@@ -11,6 +11,9 @@ public class Mag extends ClassMagic {
     public void step(ArrayList<Unit> units, ArrayList<Unit> team) {
 
     }
-
+    @Override
+    public String getType(){
+        return "Mag";
+    }
 }
 
