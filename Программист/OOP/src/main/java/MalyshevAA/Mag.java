@@ -7,10 +7,7 @@ public class Mag extends ClassMagic {
         super(name, 10, 100, 100, 3, x,y);
     }
 
-    @Override
-    public void step(ArrayList<Unit> units, ArrayList<Unit> team) {
 
-    }
     @Override
     public String getType(){
         return "Mag";

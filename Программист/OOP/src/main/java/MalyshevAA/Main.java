@@ -55,8 +55,8 @@ public class Main {
 
 
 
-        allTeam.forEach(n-> n.step(team2, team1));
-        allTeam.forEach(n-> n.step(team1, team2));
+        team1.forEach(n-> n.step(team2, team1));
+        team2.forEach(n-> n.step(team1, team2));
 
         System.out.println("\nTeam1 урон: ");
         team1.forEach(n-> System.out.println(n.getInfo()));

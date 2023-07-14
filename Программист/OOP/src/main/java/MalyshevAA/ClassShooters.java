@@ -11,24 +11,23 @@ public abstract class ClassShooters extends Unit {
         this.shoots = shoots;
     }
 
-        public int doShootDamage(){
+    public int doShootDamage() {
         return getDamage();
-        }
+    }
+
 
     @Override
     public void step(ArrayList<Unit> units, ArrayList<Unit> team) {
-        if (getHp() == 0 || this.shoots == 0) return;
-        Unit tmp = nearest(units);
+        if (getState() == "dead" || this.shoots == 0) return;
         for (Unit unit : team) {
-            if (unit.getType().equals("Peasant")&& unit.getHp()>0)
-//            if (team.contains(getClass(Peasant)))
-            {
-                if (unit.getHp()>0){
-                shoots++;
-                break;
+            if (unit.getType().equals("Peasant") && unit.getState() == "alive"&& unit.standby==true ) {
+                if (unit.getHp() > 0) {
+                    shoots++;
+                    unit.standby = false;
+                    break;
+                }
             }
         }
-            }
         nearest(units).HP_damage(doShootDamage());
 
         shoots -= 1;
@@ -37,7 +36,7 @@ public abstract class ClassShooters extends Unit {
 
     @Override
     public String getInfo() {
-        return String.format("%s hp:%d shoots:%d", getName(), getHp(), shoots);
+        return String.format("%s %s hp:%d shoots:%d", getType(), getName(), getHp(), shoots);
     }
 }
 

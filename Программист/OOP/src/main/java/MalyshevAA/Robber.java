@@ -7,10 +7,7 @@ public class Robber extends ClassInfantry {
         super(name, 12, 100, 100, 5, x, y);
     }
 
-    @Override
-    public void step(ArrayList<Unit> units, ArrayList<Unit> team) {
 
-    }
     @Override
     public String getType(){
         return "Robber";

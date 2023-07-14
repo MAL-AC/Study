@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public abstract class Unit implements Interface {
+    protected boolean standby;
     private String name;
     private int damage;
     private int maxHp;
     private int hp;
     private int speed;
+
     Coordinates coordinates;
 
     public Unit(String name, int damage, int maxHp, int hp, int speed, int x, int y) {
@@ -17,6 +19,7 @@ public abstract class Unit implements Interface {
         this.maxHp = maxHp;
         this.hp = hp;
         this.speed = speed;
+
         coordinates = new Coordinates(x,y);
 
     }
@@ -37,11 +40,7 @@ public abstract class Unit implements Interface {
         }
         return nearestEnemy;
     }
-    public void HP_damage(int damage) {
-        hp -= damage;
-        if (hp < 0) hp = 0;
-        if (hp > maxHp) hp = maxHp;
-    }
+
     public int getHp() {
         return hp;
     }
@@ -64,4 +63,18 @@ public abstract class Unit implements Interface {
     public int getSpeed() {
         return speed;
     }
+
+
+    public String getState() {
+        if (getHp() > 1) return "alive";
+        else return "dead";
+    }
+    public void HP_damage(int damage) {
+        hp -= damage;
+        if (hp < 0){
+            hp = 0;
+        }
+        if (hp > maxHp) hp = maxHp;
+    }
+
 }
