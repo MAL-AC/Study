@@ -32,11 +32,11 @@ public class View {
         for (Unit human: Main.allTeam) {
             if (human.getCoords().get(0) == x && human.getCoords().get(1) == y){
                 if (human.getHp() == 0) {
-                    out = "|" + (AnsiColors.ANSI_RED + human.toString().charAt(0) + AnsiColors.ANSI_RESET);
+                    out = "|" + (AnsiColors.ANSI_RED + human.getType().charAt(0) + AnsiColors.ANSI_RESET);
                     break;
                 }
-                if (Main.team1.contains(human)) out = "|" + (AnsiColors.ANSI_GREEN + human.toString().charAt(0) + AnsiColors.ANSI_RESET);
-                if (Main.team2.contains(human)) out = "|" + (AnsiColors.ANSI_BLUE + human.toString().charAt(0) + AnsiColors.ANSI_RESET);
+                if (Main.team1.contains(human)) out = "|" + (AnsiColors.ANSI_GREEN + human.getType().charAt(0) + AnsiColors.ANSI_RESET);
+                if (Main.team2.contains(human)) out = "|" + (AnsiColors.ANSI_BLUE + human.getType().charAt(0) + AnsiColors.ANSI_RESET);
                 break;
             }
         }

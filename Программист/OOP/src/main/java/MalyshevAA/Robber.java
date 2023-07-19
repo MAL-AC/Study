@@ -1,10 +1,9 @@
 package MalyshevAA;
 
-import java.util.ArrayList;
 
 public class Robber extends ClassInfantry {
     public Robber(String name, int x, int y) {
-        super(name, 12, 100, 100, 5, x, y);
+        super(name, 12, 3,80, 80, 9,1,1, x, y);
     }
 
 

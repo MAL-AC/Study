@@ -1,6 +1,6 @@
 package MalyshevAA;
 
-import java.util.ArrayList;
+
 
 public class Sniper extends ClassShooters{
     public Sniper(String name, int x, int y) {

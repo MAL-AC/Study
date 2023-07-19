@@ -10,18 +10,32 @@ public abstract class Unit implements Interface {
     private int maxHp;
     private int hp;
     private int speed;
+    public int moveDistance;
+    public String state;
 
     Coordinates coordinates;
 
-    public Unit(String name, int damage, int maxHp, int hp, int speed, int x, int y) {
+    public Unit(String name, int damage,int moveDistance, int maxHp, int hp, int speed, int x, int y) {
         this.name = name;
         this.damage = damage;
         this.maxHp = maxHp;
         this.hp = hp;
         this.speed = speed;
-
         coordinates = new Coordinates(x, y);
+        this.moveDistance = moveDistance;
+        this.state = "Standby";
 
+
+    }
+    public ArrayList<Integer> getCoords() {
+        return coordinates.xy;
+    }
+    public void move(Coordinates targetPosition, ArrayList<Unit> team) {
+        if (!coordinates.containsByPos(coordinates.newPosition(targetPosition, team), team)) {
+            for (int i = 0; i < moveDistance; i++) {
+                coordinates = coordinates.newPosition(targetPosition, team);
+            }
+        }
     }
 
     @Override
@@ -83,8 +97,7 @@ public abstract class Unit implements Interface {
         }
         if (hp > maxHp) hp = maxHp;
     }
-
-    public ArrayList<Integer> getCoords() {
-        return coordinates.xy;
+    public int damage() {
+        return damage;
     }
 }
