@@ -1,0 +1,39 @@
+
+
+To reconfigure manually, use the /usr/local/openvpn_as/bin/ovpn-init tool.
+
++++++++++++++++++++++++++++++++++++++++++++++++
+Access Server 2.12.0 has been successfully installed in /usr/local/openvpn_as
+Configuration log file has been written to /usr/local/openvpn_as/init.log
+
+
+Access Server Web UIs are available here:
+Admin  UI: https://10.164.0.2:943/admin
+Client UI: https://10.164.0.2:943/
+To login please use the "openvpn" account with "4Tc3Rj5ziZe6" password.
+(password can be changed on Admin UI)
++++++++++++++++++++++++++++++++++++++++++++++++
+
+Processing triggers for man-db (2.9.4-2) ...
+Processing triggers for libc-bin (2.31-13+deb11u6) ...
+root@instance-2:/home/kinmal1988# 
+
+
+
+https://34.90.9.210:943/admin
+
+ovpn-1
+
+Requesting a certificate for kinmal1988.hopto.org
+
+Successfully received certificate.
+Certificate is saved at: /etc/letsencrypt/live/kinmal1988.hopto.org/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/kinmal1988.hopto.org/privkey.pem
+This certificate expires on 2023-10-18.
+These files will be updated when the certificate renews.
+Certbot has set up a scheduled task to automatically renew this certificate in the background.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+If you like Certbot, please consider supporting our work by:
+ * Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+ * Donating to EFF:                    https://eff.org/donate-le
