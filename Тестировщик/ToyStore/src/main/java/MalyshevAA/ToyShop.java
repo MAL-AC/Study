@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 public class ToyShop {
-    private List<Toys> toys;
+    public List<Toys> toys;
 
     public ToyShop() {
         toys = new ArrayList<>();
@@ -26,34 +26,32 @@ public class ToyShop {
     }
 
     public void drawToys() {
-        if (toys.isEmpty()) {
-            System.out.println("Магазин пуст");
-            return;
-        }
-        double totalWeight = 0;
+        int q = 0;
         for (Toys toy : toys) {
-            totalWeight += toy.getWeight();
+            q += toy.getQuantity();
         }
+        if (q != 0) {
 
-        Random random = new Random();
-        double randomNumber = random.nextDouble() * totalWeight;
-
-        double currentWeight = 0;
-        Toys choseToy = null;
-
-        for (Toys toy : toys) {
-            currentWeight += toy.getWeight();
-            if (randomNumber <= currentWeight) {
-                choseToy = toy;
-                break;
+            double totalWeight = 0;
+            for (Toys toy : toys) {
+                totalWeight += toy.getWeight();
             }
+
+            Random random = new Random();
+            double randomNumber = random.nextDouble() * totalWeight;
+            double countWeight = 0.0;
+            for (Toys toy : toys) {
+                countWeight += toy.getWeight();
+                if (randomNumber <= countWeight && toy.getQuantity() > 0) {
+                    System.out.println("Вы выйграли игрушку: " + toy.getName());
+                    toy.setQuantity(toy.getQuantity() - 1);
+                    break;
+                }
+            }
+
+        } else {
+            System.out.println("Магазин пуст");
         }
-        if (choseToy != null) {
-            System.out.println("Вы выйграли игрушку: " + choseToy.getName());
-            if (choseToy.getQuantity() > 0) {
-                choseToy.setQuantity(choseToy.getQuantity() - 1);
-            } else System.out.println("Такая игрушка закончилась.");
-        } else System.out.println("Нифига не выиграли");
 
     }
 
@@ -78,14 +76,15 @@ public class ToyShop {
             System.out.println("Id: " + toy.getId() + ", Name: " + toy.getName() + ", Quantity: " + toy.getQuantity() + ", Weight: " + toy.getWeight());
         }
     }
-    public int setId(){
+
+    public int setId() {
         int maxId = 0;
-        for (Toys toy: toys) {
-            if(toy.getId()>maxId){
+        for (Toys toy : toys) {
+            if (toy.getId() > maxId) {
                 maxId = toy.getId();
             }
         }
-        return maxId+1;
+        return maxId + 1;
     }
 
 }
