@@ -1,0 +1,59 @@
+a {
+    text-decoration: none;
+}
+
+.index {
+    color: rgb(29, 6, 235);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.first-title {
+    color: #222222;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+
+}
+
+.second-title {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+}
+
+.paragraf {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+}
+
+.img {
+    border-radius: 10px;
+}
+
+.form {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.bottom {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.body {
+    font-family: sans-serif;
+}
