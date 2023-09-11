@@ -1,0 +1,272 @@
+mal@SkyNet:~$ mkdir students 
+
+mal@SkyNet:~$ mkdir mentors
+
+mal@SkyNet:~$ ls -li
+
+итого 100
+
+ 922398 drwxrwxr-x 3 mal  mal     4096 Sep  4 17:44  1
+
+1081437 drwxrwxr-x 2 mal  mal     4096 Sep  5 10:23  lect2
+
+ 789757 drwxrwxr-x 2 mal  mal     4096 Sep  7 21:28  mentors
+
+      1 drwxrwx--- 1 root vboxsf 49152 Sep  7 20:01  shared
+
+1072932 drwx------ 5 mal  mal     4096 Aog 31 23:47  snap
+
+ 789373 drwxrwxr-x 2 mal  mal     4096 Sep  7 21:27  students
+
+1073017 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Видео
+
+1073014 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Документы
+
+1073011 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Загрузки
+
+1073016 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Изображения
+
+1073015 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Музыка
+
+1073013 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Общедоступные
+
+1073010 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26 'Рабочий стол'
+
+1073012 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Шаблоны
+
+mal@SkyNet:~$ nano students/students_list.txt
+
+mal@SkyNet:~$ nano mentors/mentors_list.txt
+
+mal@SkyNet:~$ mv mentors/mentors_list.txt students/
+
+mal@SkyNet:~$ ls -li
+
+итого 100
+
+ 922398 drwxrwxr-x 3 mal  mal     4096 Sep  4 17:44  1
+
+1081437 drwxrwxr-x 2 mal  mal     4096 Sep  5 10:23  lect2
+
+ 789757 drwxrwxr-x 2 mal  mal     4096 Sep  7 21:33  mentors
+
+      1 drwxrwx--- 1 root vboxsf 49152 Sep  7 20:01  shared
+
+1072932 drwx------ 5 mal  mal     4096 Aog 31 23:47  snap
+
+ 789373 drwxrwxr-x 2 mal  mal     4096 Sep  7 21:33  students
+
+1073017 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Видео
+
+1073014 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Документы
+
+1073011 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Загрузки
+
+1073016 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Изображения
+
+1073015 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Музыка
+
+1073013 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Общедоступные
+
+1073010 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26 'Рабочий стол'
+
+1073012 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Шаблоны
+
+mal@SkyNet:~$ rm -r mentors/
+
+mal@SkyNet:~$ mkdir students_and_mentors
+
+mal@SkyNet:~$ mv students students_and_mentors/
+
+mal@SkyNet:~$ ls -li
+
+итого 96
+
+ 922398 drwxrwxr-x 3 mal  mal     4096 Sep  4 17:44  1
+
+1081437 drwxrwxr-x 2 mal  mal     4096 Sep  5 10:23  lect2
+
+      1 drwxrwx--- 1 root vboxsf 49152 Sep  7 20:01  shared
+
+1072932 drwx------ 5 mal  mal     4096 Aog 31 23:47  snap
+
+ 789757 drwxrwxr-x 3 mal  mal     4096 Sep  7 21:36  students_and_mentors
+
+1073017 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Видео
+
+1073014 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Документы
+
+1073011 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Загрузки
+
+1073016 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Изображения
+
+1073015 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Музыка
+
+1073013 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Общедоступные
+
+1073010 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26 'Рабочий стол'
+
+1073012 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Шаблоны
+
+mal@SkyNet:~$ rm -r students_and_mentors/
+
+mal@SkyNet:~$ nano file1
+
+mal@SkyNet:~$ cp file1 file2
+
+mal@SkyNet:~$ ln -s file1 file3
+
+mal@SkyNet:~$ ln file1 file4
+
+mal@SkyNet:~$ ls -li
+
+итого 104
+
+ 922398 drwxrwxr-x 3 mal  mal     4096 Sep  4 17:44  1
+
+ 789757 -rw-rw-r-- 2 mal  mal       14 Sep  7 21:37  file1
+
+ 789373 -rw-rw-r-- 1 mal  mal       14 Sep  7 21:38  file2
+
+ 789758 lrwxrwxrwx 1 mal  mal        5 Sep  7 21:38  file3 -> file1
+
+ 789757 -rw-rw-r-- 2 mal  mal       14 Sep  7 21:37  file4
+
+1081437 drwxrwxr-x 2 mal  mal     4096 Sep  5 10:23  lect2
+
+      1 drwxrwx--- 1 root vboxsf 49152 Sep  7 20:01  shared
+
+1072932 drwx------ 5 mal  mal     4096 Aog 31 23:47  snap
+
+1073017 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Видео
+
+1073014 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Документы
+
+1073011 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Загрузки
+
+1073016 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Изображения
+
+1073015 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Музыка
+
+1073013 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Общедоступные
+
+1073010 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26 'Рабочий стол'
+
+1073012 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Шаблоны
+
+mal@SkyNet:~$ rm file1
+
+mal@SkyNet:~$ ls -li
+
+итого 100
+
+ 922398 drwxrwxr-x 3 mal  mal     4096 Sep  4 17:44  1
+
+ 789373 -rw-rw-r-- 1 mal  mal       14 Sep  7 21:38  file2
+
+ 789758 lrwxrwxrwx 1 mal  mal        5 Sep  7 21:38  file3 -> file1
+
+ 789757 -rw-rw-r-- 1 mal  mal       14 Sep  7 21:37  file4
+
+1081437 drwxrwxr-x 2 mal  mal     4096 Sep  5 10:23  lect2
+
+      1 drwxrwx--- 1 root vboxsf 49152 Sep  7 20:01  shared
+
+1072932 drwx------ 5 mal  mal     4096 Aog 31 23:47  snap
+
+1073017 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Видео
+
+1073014 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Документы
+
+1073011 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Загрузки
+
+1073016 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Изображения
+
+1073015 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Музыка
+
+1073013 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Общедоступные
+
+1073010 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26 'Рабочий стол'
+
+1073012 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Шаблоны
+
+mal@SkyNet:~$ less file2
+
+
+
+[1]+  Остановлен    less file2
+
+mal@SkyNet:~$ less file3
+
+file3: Нет такого файла или каталога
+
+mal@SkyNet:~$ less file4
+
+
+
+[2]+  Остановлен    less file4
+
+mal@SkyNet:~$ mv file2 newfile2
+
+mal@SkyNet:~$ mv file3 newfile3
+
+mal@SkyNet:~$ mv file4 newfile4
+
+mal@SkyNet:~$ mkdir test
+
+mal@SkyNet:~$ ln -s newfile2 linkfile2
+
+mal@SkyNet:~$ mv li
+
+mv: после 'li' пропущен операнд, задающий целевой файл
+
+По команде «mv --help» можно получить дополнительную информацию.
+
+mal@SkyNet:~$ mv linkfile2 test/
+
+mal@SkyNet:~$ ls -li
+
+итого 104
+
+ 922398 drwxrwxr-x 3 mal  mal     4096 Sep  4 17:44  1
+
+1081437 drwxrwxr-x 2 mal  mal     4096 Sep  5 10:23  lect2
+
+ 789373 -rw-rw-r-- 1 mal  mal       14 Sep  7 21:38  newfile2
+
+ 789758 lrwxrwxrwx 1 mal  mal        5 Sep  7 21:38  newfile3 -> file1
+
+ 789757 -rw-rw-r-- 1 mal  mal       14 Sep  7 21:37  newfile4
+
+      1 drwxrwx--- 1 root vboxsf 49152 Sep  7 20:01  shared
+
+1072932 drwx------ 5 mal  mal     4096 Aog 31 23:47  snap
+
+ 789759 drwxrwxr-x 2 mal  mal     4096 Sep  7 21:43  test
+
+1073017 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Видео
+
+1073014 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Документы
+
+1073011 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Загрузки
+
+1073016 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Изображения
+
+1073015 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Музыка
+
+1073013 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Общедоступные
+
+1073010 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26 'Рабочий стол'
+
+1073012 drwxr-xr-x 2 mal  mal     4096 Aog 31 22:26  Шаблоны
+
+mal@SkyNet:~$ cd test
+
+mal@SkyNet:~/test$ ls -li
+
+итого 0
+
+789760 lrwxrwxrwx 1 mal mal 8 Sep  7 21:43 linkfile2 -> newfile2
+
+mal@SkyNet:~/test$ 
+

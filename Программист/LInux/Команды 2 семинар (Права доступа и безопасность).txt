@@ -1,0 +1,27 @@
+sudo useradd -s /bin/bash -m -d /nome/testuser testuser - создать пользователя с оболочкой и директорией (нет пароля)
+sudo adduser testuser  - создать пользователя со скрипта (пароль есть и вся херня,  дом. каталог nome/testuser)
+tail /etc/passwd - поосмотреть пользователей
+sudo tail/ etc/shadow  - посмотреть пароли пользователей
+sudo ls -al /home/testuser   - посмотреть содержание каталога у пользователя
+sudo passwd testuser   - задать или поменять пароль
+sudo usermod -aG adm testuser   - добавить пользователя в группу adm
+sudo usermod -g adm testuser  - поменять основную группу у пользователя
+id - какие группы у меня есть
+sudo id testuser  - какие группы у пользователя
+sudo userdel testuser  - удалить пользователя (домашняя директория остаётся)
+sudo userdel testuser -r   - удалить пользователя с домашней директорией
+sudo chage testuser - управление паролем пользователя (срок годности и тд.)
+
+sudo groupadd testgroup - создать группу
+sudo groupdel testgroup - удалить группу
+
+su testuser  - переключиться на другого пользователя (если у пользователя есть пароль)
+exit - вернуться к своему пользователю
+
+sudo su - перейти к суперпользователю
+
+sudo vsudo  - управление привилегиями sudo, adm
+
+sudo chown testuser:www-data test1  - поменять владельца у файла
+sudo chown -R testuser:www-data /home/mal/test1  - поменять владельца всего каталога
+
