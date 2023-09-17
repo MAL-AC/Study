@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body {
+	scroll-behavior: smooth;
+	background: #ffffff;
+	color: #222;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+.container{
+    max-width: 1140px;
+	margin: 0 auto;
+}
+.background{
+    background-color:#F1E4E6;
+}
+.back-header{
+    background-color: #222222;
+    padding-top: 18px;
+    padding-bottom: 19px;
+}
+.navigation__menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.nav__logo{
+display: flex;
+flex-direction: row;
+align-items: baseline;
+gap: 41px;
+color: #E8E8E8;
+}
+.nav__menu{
+display: flex;
+flex-direction: row;
+align-items: baseline;
+gap: 33px;
+color: #E8E8E8;
+}
+.banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
+}
+.group__right{
+width: 405px;
+height: 94px;
+border-left: 12px solid #F16D7F;
+display: flex;
+flex-direction: column;
+}
+.group__right h1{
+color: #222;
+font-family: "Lato";
+font-size: 48px;
+font-weight: 900;
+text-transform: uppercase;
+}
+.group__right h2{
+color: #222;
+font-family: "Lato";
+font-size: 32px;
+font-weight: 700;
+text-transform: uppercase;
+}
+.group__right h3{
+color: #F16D7F;
+font-family: "Lato";
+font-size: 32px;
+font-weight: 700;
+text-transform: uppercase;
+}
+.subtitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.text__group__right{
+    padding-left: 16px;
+}
+.offer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 65px;
+    margin-bottom: 96px;
+}
+.first_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards_back{
+    background-color: #211616B2;
+    background-size: cover;
+    width: 360px;
+    height: 260px;
+}
+.Offer_card_text{
+    width: 360px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.cards_back p{
+    color: #FFF;
+text-align: center;
+font-family: "Lato";
+font-size: 16px;
+font-weight: 400;
+}
+.cards_back h2{
+color: #F16D7F;
+font-family: Lato;
+font-size: 24px;
+font-weight: 700;
+}
+.card1__img{
+background-image: url(images/offer1.png);
+width: 360px;
+height: 260px;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+cursor: pointer;
+}
+.card2__img{
+background-image: url(images/offer2.png);
+width: 360px;
+height: 260px;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+cursor: pointer;
+}
+.card3__img{
+background-image: url(images/offer3.png);
+width: 360px;
+height: 260px;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+cursor: pointer;
+}
+.card4__img{
+background-image: url(images/offer4.png);
+width: 1140px;
+height: 180px;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+cursor: pointer;
+}
+
+.cards_back_big{
+    background-color: #211616B2;
+    background-size: cover;
+    width: 1140px;
+height: 180px;
+}
+.Offer_card_text_big{
+    max-width: 1140px;
+height: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.cards_back_big p{
+    color: #FFF;
+text-align: center;
+font-family: "Lato";
+font-size: 16px;
+font-weight: 400;
+}
+.cards_back_big h2{
+color: #F16D7F;
+font-family: Lato;
+font-size: 24px;
+font-weight: 700;
+}
+.products{
+    margin-bottom: 96px;
+    display: flex;
+    gap: 38px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.product_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+.product_title h2{
+    color: #222;
+    font-family: "Lato";
+    font-size: 30px;
+    font-weight: 400;
+}
+.product_title p{
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+}
+.products__cards{
+display: grid;
+grid-template-columns:  360px 360px 360px;
+justify-content: space-between;
+gap: 30px;
+
+}
+.product{
+    width: 360px;
+    height: 587px;
+    cursor: pointer;
+}
+.text__area{
+background-color: #F8F8F8;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+padding: 24px 16px;
+}
+.text__area h2{
+color: #000;
+font-family: "Lato";
+font-size: 13px;
+font-weight: 400;
+}
+.text__area p{
+color: #5D5D5D;
+font-family: "Lato";
+font-size: 14px;
+font-weight: 300;
+}
+.text__area h3{
+    color: #F16D7F;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 400;
+}
+.products button{
+width: 212px;
+height: 48px;
+border: 1px solid #FF6A6A;
+background: none;
+color: #F26376;
+font-family: "Lato";
+font-size: 16px;
+font-weight: 400;
+cursor: pointer;
+}
