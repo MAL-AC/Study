@@ -1,0 +1,45 @@
+Установить Docker.
+mal@SkyNet:~$ sudo apt install docker.io -y
+mal@SkyNet:~$ sudo apt install docker-compose -y
+mal@SkyNet:~$ sudo apt install yamllint -y
+
+
+Запустить контейнер с Ubuntu.
+mal@SkyNet:~$ sudo docker search ubuntu
+mal@SkyNet:~$ sudo docker pull ubuntu
+mal@SkyNet:~$ sudo docker images
+mal@SkyNet:~$ sudo docker run -it ubuntu
+
+Используя Dockerfile, собрать связку nginx + PHP-FPM в одном контейнере.
+
+Командная строка:
+mal@SkyNet:~$ sudo docker search nginx
+mal@SkyNet:~$ sudo docker pull nginx
+mal@SkyNet:~$ sudo docker images
+mal@SkyNet:~$ sudo docker run -p 8080:80 nginx:latest
+
+Через yaml
+mal@SkyNet:~/test$ nano docker-compose.yml
+Прописываем:
+version: '3'
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - /var/www/html:/share/nginx/html
+
+mal@SkyNet:~/test$ docker-compose up -d
+
+Здесь у меня происходит ошибка и я не понимаю что делать.
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,146 @@
+mal@SkyNet:~$ sudo apt install nginx -y
+
+mal@SkyNet:~$ sudo nginx -t
+
+mal@SkyNet:~$ sudo apt install apache2 -y
+
+mal@SkyNet:~$ sudo apachectl -t
+
+mal@SkyNet:/etc/apache2$ cd /etc/apache2/
+
+mal@SkyNet:/etc/apache2$ sudo nano ports.conf 
+
+Меняем номер порта:
+Listen 9000
+<IfModule ssl_module>
+#       Listen 443
+</IfModule>
+<IfModule mod_gnutls.c>
+        Listen 443
+</IfModule>
+
+проверяем:
+mal@SkyNet:/etc/apache2$ sudo apachectl -t 
+
+mal@SkyNet:/etc/apache2$ sudo nano sites-available/000-default.conf 
+
+меняем порт:
+VirtualHost *:9000>
+
+mal@SkyNet:/etc/apache2$ sudo systemctl start apache2
+
+mal@SkyNet:/etc/apache2$ sudo apachectl -t
+
+mal@SkyNet:/etc/apache2$ sudo nano /etc/nginx/sites-enabled/default
+
+Прописываем:
+        location / {
+
+                # First attempt to serve request as file, then
+
+                # as directory, then fall back to displaying a 404.
+
+                #try_files $uri $uri/ =404;
+
+
+
+                proxy_pass http://localhost:9000;
+
+                proxy_set_header Host $host;
+
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+                proxy_set_header X-Real-IP $remote_addr;
+
+        }
+
+sudo nginx -t
+
+sudo systemctl start nginx
+
+sudo systemctl start apache2
+
+mal@SkyNet:/etc/apache2$ sudo apt install libapache2-mod-php8.1 php8.1 -y
+
+mal@SkyNet:/etc/apache2$ cd /var/www/html/
+
+mal@SkyNet:/var/www/html$ sudo su
+
+root@SkyNet:/var/www/html# nano info.php
+
+Прописываем:
+<?php
+   phpinfo();
+?>
+
+проверяем в браузере: http://localhost/info.php
+
+root@SkyNet:/var/www/html# apt install php-fpm -y
+
+mal@SkyNet:/etc/php$ nano /etc/php/8.1/fpm/pool.d/www.conf
+
+Копируем:   /run/php/php8.1-fpm.sock
+
+mal@SkyNet:/etc/php$ cd /etc/nginx/
+
+mal@SkyNet:/etc/nginx$ sudo nano sites-enabled/default 
+
+Раскоментить и прописать:
+        location ~ \.php$ {
+                include snippets/fastcgi-php.conf;
+        #
+        #       # With php-fpm (or other unix sockets):
+                fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+        #       # With php-cgi (or other tcp sockets):
+        #       fastcgi_pass 127.0.0.1:9000;
+        }
+
+sudo nginx -t
+
+mal@SkyNet:/etc/nginx$ sudo systemctl reload nginx
+
+mal@SkyNet:/etc/nginx$ systemctl status php*
+
+
+
+My-SQL
+
+mal@SkyNet:/etc/nginx$ sudo apt install mysql-server -y
+
+mal@SkyNet:/etc/nginx$ systemctl status mysql
+
+mal@SkyNet:/etc/nginx$ sudo mysql -u root -p
+
+mysql> create database test;
+
+mysql> use test;
+
+mysql> create table testers(id int, email varchar(50));
+
+mysql> INSERT INTO testers VALUES (1, 'mal@ya.ru'),(2, 'figer@mail.ru');
+
+mysql> select * from testers;
+
+
+Установка модуля расширения php-mbstring.
+mal@SkyNet:/etc/nginx$ sudo apt install php-mbstring -y
+
+
+Установка phpmyadmin
+mal@SkyNet:/etc/nginx$ sudo apt install phpmyadmin -y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
