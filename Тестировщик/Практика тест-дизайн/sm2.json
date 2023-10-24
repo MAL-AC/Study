@@ -1,0 +1,3042 @@
+{
+    "cases": [],
+    "suites": [
+        {
+            "id": 1,
+            "title": "Раздел \"Забронировать столик\"",
+            "description": null,
+            "preconditions": "Проскроллить до раздела \"Забронировать столик\"",
+            "suites": [
+                {
+                    "id": 2,
+                    "title": "Проверка на валидность введённых значений",
+                    "description": null,
+                    "preconditions": null,
+                    "suites": [],
+                    "cases": [
+                        {
+                            "id": 2,
+                            "title": "Проверка поля \"Дата\" на незаполненность",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Оставить пустым поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Оставить пустым поле \"Время\"",
+                                    "expected_result": "Поле \"Время\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Оставить пустым поле \"Количество мест\"",
+                                    "expected_result": "Поле \"Количество мест\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Оставить пустым поле \"Дата\"",
+                                    "expected_result": "Поле \"Дата\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Оставить пустым поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать**\"**",
+                                    "expected_result": "Отображается МО с информацией \"Ваш столик на 4 персон забронирован на время NN часов**\"**",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 3,
+                            "title": "Проверка поля \"Имя\" латиницей",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Kate",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2999-999",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "50 – 50 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "888",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-боксы активны",
+                                    "data": "02\\. Столик на веранде\n03\\. С животным",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее\"",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "02\\. Наличные",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "В поле прикреплено фото паспорта",
+                                    "data": ".jpeg-файл",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Отображается МО с информацией \"Ваш столик на 50 персон забронирован на время NN часов\\*\\*\"\\*\\*",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 4,
+                            "title": "Проверка поля \"Имя\" на минимальную длину - 1 символ",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "K",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2000-000",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "50 – 50 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "03\\. С животным",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее\"",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "02\\. Наличные",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "В поле прикреплено фото паспорта",
+                                    "data": ".jpeg-файл",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Отображается МО с информацией “Ваш столик на 50 персон забронирован на время NN часов”",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 5,
+                            "title": "Проверка поля \"Имя\" на максимальную длину - 50 символов",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "ываываываыаааыавыааыавыаыаыаваыаавыаыавыавыаываыав",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2000-000",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "50 – 50 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "03\\. С животным",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее\"",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "02\\. Наличные",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "В поле прикреплено фото паспорта",
+                                    "data": ".jpeg-файл",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Отображается МО с информацией “Ваш столик на 50 персон забронирован на время NN часов”",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 6,
+                            "title": "Проверка поля \"Проверочный код из смс\" на максимальную длину - 6 символа",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "555666",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать**\"**",
+                                    "expected_result": "Отображается МО с информацией \"Ваш столик на 4 персон забронирован на время NN часов**\"**",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 7,
+                            "title": "Проверка поля \"Сообщение\" на максимальную длину - 250 символов",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "ываываываыаааыавыааыавыаыаыаваыаавыаыавыавыаываыавываываываыаааыавыааыавыаыаыаваыаавыаыавыавыаываыавываываываыаааыавыааыавыаыаыаваыаавыаыавыавыаываыавываываываыаааыавыааыавыаыаыаваыаавыаыавыавыаываыавываываываыаааыавыааыавыаыаыаваыаавыаыавыавыаываыав",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать**\"**",
+                                    "expected_result": "Отображается МО с информацией \"Ваш столик на 4 персон забронирован на время NN часов**\"**",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 8,
+                            "title": "Проверка поля \"Сообщение\" на минимальную длину - 0 символов",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Оставить пустым поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать**\"**",
+                                    "expected_result": "Отображается МО с информацией \"Ваш столик на 4 персон забронирован на время NN часов**\"**",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 9,
+                            "title": "Проверка поля \"Номер телефона\" на минимальную длину - 0 символов",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Оставить пустым поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Оставить пустым поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать**\"**",
+                                    "expected_result": "Отображается МО с информацией \"Ваш столик на 4 персон забронирован на время NN часов**\"**",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 10,
+                            "title": "Проверка поля \"Время\" на незаполненность",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Оставить пустым поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Оставить пустым поле \"Время\"",
+                                    "expected_result": "Поле \"Время\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Оставить пустым поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать**\"**",
+                                    "expected_result": "Отображается МО с информацией \"Ваш столик на 4 персон забронирован на время NN часов**\"**",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 11,
+                            "title": "Проверка поля \"Количество мест\" на незаполненность",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Оставить пустым поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Оставить пустым поле \"Время\"",
+                                    "expected_result": "Поле \"Время\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Оставить пустым поле \"Количество мест\"",
+                                    "expected_result": "Поле \"Количество мест\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Оставить пустым поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать**\"**",
+                                    "expected_result": "Отображается МО с информацией \"Ваш столик на 4 персон забронирован на время NN часов**\"**",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 12,
+                            "title": "Проверка поля \"Ваши пожелания\" со всеми выбранными чекбоксами",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать все чекбоксы в поле \"Ваши пожелания\"",
+                                    "expected_result": "Все чек-боксы активны",
+                                    "data": "01\\. Музыка в кафе\n02\\. Столик на веранде\n03\\. С животным",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать**\"**",
+                                    "expected_result": "Отображается МО с информацией \"Ваш столик на 4 персон забронирован на время NN часов**\"**",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 13,
+                            "title": "Проверка поля \"Проверочный код из смс\" на минимальную длину - 3 символа",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "555",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать**\"**",
+                                    "expected_result": "Отображается МО с информацией \"Ваш столик на 4 персон забронирован на время NN часов**\"**",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 15,
+                            "title": "Проверка поля \"Ваши пожелания\" с невыбранными чекбоксами",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Оставить пустым поле \"Ваши пожелания\"",
+                                    "expected_result": "Чек-боксы не активны",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать**\"**",
+                                    "expected_result": "Отображается МО с информацией \"Ваш столик на 4 персон забронирован на время NN часов**\"**",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 25,
+                            "title": "Проверка поля \"Имя\" кириллицей",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать**\"**",
+                                    "expected_result": "Отображается МО с информацией \"Ваш столик на 4 персон забронирован на время NN часов**\"**",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Проверка на невалидные введённые значения",
+                    "description": null,
+                    "preconditions": null,
+                    "suites": [],
+                    "cases": [
+                        {
+                            "id": 14,
+                            "title": "Проверка поля \"Имя\" на превышение длины - 51 символ",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "ываываываыаааыавыааыавыаыаыаваыаавыаыавыавыаываыавц",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Ошибка валидации",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 17,
+                            "title": "Проверка поля \"Email\" на формат email (без ввода домена)",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Ошибка валидации",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 18,
+                            "title": "Проверка поля \"Имя\" на невалидные символы (@)",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Kate@",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Ошибка валидации",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 19,
+                            "title": "Проверка поля \"Email\" на пустоту",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Не заполнять поле \"Email\"",
+                                    "expected_result": "Поле \"email\" не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Ошибка валидации",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 20,
+                            "title": "Проверка поля \"Email\" на формат email (без ввода имени пользователя)",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Ошибка валидации",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 21,
+                            "title": "Проверка поля \"Имя\" на пустоту",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Оставить пустым поле \"Имя\"",
+                                    "expected_result": "Поле имя не заполнено",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Ошибка валидации",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 22,
+                            "title": "Проверка поля \"Email\" на формат email (без ввода @)",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterinagmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Ошибка валидации",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 23,
+                            "title": "Проверка полей \"Время \" в прошлом",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в прошлом",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Ошибка валидации",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 24,
+                            "title": "Проверка поля \"Номер телефона\" на невалидность телефона",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "%Pattern%",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Ошибка валидации",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": [
+                                {
+                                    "title": "Pattern",
+                                    "values": [
+                                        "212-123",
+                                        "23124-123",
+                                        "2123-12",
+                                        "2123-1234",
+                                        "3123-123",
+                                        "2123123",
+                                        "о123-123",
+                                        "212ш-123",
+                                        "2123-12ш",
+                                        "312-312"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": 26,
+                            "title": "Проверка поля \"Дата\" в прошлом",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Вчерашняя дата",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Ошибка валидации",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 27,
+                            "title": "Проверка поля \"Сообщение\" на превышение длины - 251 символов",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "ываываываыаааыавыааыавыаыаыаваыаавыаыавыавыаываыавываываываыаааыавыааыавыаыаыаваыаавыаыавыавыаываыавываываываыаааыавыааыавыаыаыаваыаавыаыавыавыаываыавываываываыаааыавыааыавыаыаыаваыаавыаыавыавыаываыавываываываыаааыавыааыавыаыаыаваыаавыаыавыавыаываыавк",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Ошибка валидации",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 28,
+                            "title": "Проверка поля \"Проверочный код из смс\" на невалидные значения",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "%СМС%",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Ошибка валидации",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": [
+                                {
+                                    "title": "СМС",
+                                    "values": [
+                                        "25",
+                                        "5558889"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": 29,
+                            "title": "Проверка поля \"Оплата заказа будет удобнее\" с невыбранными значениями",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Не выбирать значение в поле \"Оплата заказа будет удобнее\"",
+                                    "expected_result": "Радиобаттоны не выбраны",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Поле пустое",
+                                    "data": "",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Ошибка валидации",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": []
+                        },
+                        {
+                            "id": 30,
+                            "title": "Проверка поля \"Если у вас день рождения, прикрепите фото паспорта:\" на невалидный формат",
+                            "description": null,
+                            "preconditions": null,
+                            "postconditions": null,
+                            "priority": "undefined",
+                            "severity": "normal",
+                            "type": "other",
+                            "behavior": "undefined",
+                            "automation": "is-not-automated",
+                            "status": "actual",
+                            "is_flaky": "no",
+                            "layer": "unknown",
+                            "milestone": null,
+                            "custom_fields": [],
+                            "steps_type": "classic",
+                            "steps": [
+                                {
+                                    "position": 1,
+                                    "action": "Заполнить поле \"Имя\"",
+                                    "expected_result": "Поле имя заполнено",
+                                    "data": "Екатерина",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 2,
+                                    "action": "Заполнить поле \"Email\"",
+                                    "expected_result": "Поле \"email\" заполнено",
+                                    "data": "ekaterina@gmail.com",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 3,
+                                    "action": "Заполнить поле \"Номер телефона\"",
+                                    "expected_result": "Поле \"Номер телефона\" заполнено",
+                                    "data": "2123-123",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 4,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Время\"",
+                                    "expected_result": "В поле \"Время\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 5,
+                                    "action": "Выбрать значение из выпадающего списка в поле \"Количество мест\"",
+                                    "expected_result": "В поле \"Количество мест\" отображается выбранное значение",
+                                    "data": "4 – 4 мест",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 6,
+                                    "action": "Выбрать значение из пикера в поле \"Дата\"",
+                                    "expected_result": "В поле \"Дата\" отображается выбранное значение",
+                                    "data": "Доступное время в будущем",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 7,
+                                    "action": "Заполнить поле \"Сообщение\"",
+                                    "expected_result": "Поле \"Сообщение\" заполнено",
+                                    "data": "Прошу перезвонить после просмотра заявки.",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 8,
+                                    "action": "Заполнить поле \"Проверочный код из смс\"",
+                                    "expected_result": "Поле \"Проверочный код из смс\" заполнено",
+                                    "data": "5556",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 9,
+                                    "action": "Выбрать опцию в чек-боксе \"Ваши пожелания\"",
+                                    "expected_result": "Чек-бокс активен",
+                                    "data": "01\\. Музыка в кафе",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 10,
+                                    "action": "Выбрать значение в поле \"Оплата заказа будет удобнее**\"**",
+                                    "expected_result": "В поле значение отображается",
+                                    "data": "01\\. Карта",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 11,
+                                    "action": "Прикрепить изображение в поле \"Если у вас день рождения, прикрепите фото паспорта:**\"**",
+                                    "expected_result": "Документ прикреплен",
+                                    "data": "%Photo%",
+                                    "steps": []
+                                },
+                                {
+                                    "position": 12,
+                                    "action": "Нажать на кнопку \"Забронировать\"",
+                                    "expected_result": "Ошибка валидации",
+                                    "data": "",
+                                    "steps": []
+                                }
+                            ],
+                            "tags": [],
+                            "params": [
+                                {
+                                    "title": "Photo",
+                                    "values": [
+                                        ".mp3",
+                                        ".pdf",
+                                        ".doc",
+                                        ".xls",
+                                        ".gif",
+                                        ".mp4",
+                                        ".mov",
+                                        ".exe",
+                                        ".html",
+                                        ".bat",
+                                        ".rar",
+                                        ".zip"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cases": []
+        }
+    ]
+}
