@@ -19,9 +19,11 @@ sudo docker run --name myphp -d --link some-mysql:db -p 8081:80 phpmyadmin/phpmy
 
 
 Создаём Docker-compose файл
-mal@SkyNet:~$ mkdir composefolder
-mal@SkyNet:~$ cd composefolder/
-mal@SkyNet:~/composefolder$ nano docker-compose.yml
+
+mkdir composefolder
+cd composefolder/
+nano docker-compose.yml
+
 Прописываем в файле:
 version: '3.9'
 services:
