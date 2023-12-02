@@ -12,7 +12,7 @@ sudo docker run --name myphp -d --link some-mysql:db -p 8081:80 phpmyadmin/phpmy
 	-p 8081:80 - проброс портов
 	phpmyadmin/phpmyadmin - имя образа на котором будет создан контейнер
 
-Вводив в браузере http://localhost:8081/
+В браузере http://localhost:8081/
 
 Создаём Docker-compose файл
 mal@SkyNet:~$ mkdir composefolder
@@ -46,7 +46,7 @@ services:
     environment:
       PMA_HOST: some-mysql
 *****************************************************************
-************************Вариант 2********************************
+************************Вариант 2 (на лекции)********************************
 version: '3.9'
 
 services:
@@ -63,3 +63,5 @@ services:
       - 6080:8080
 ******************************************************************
 sudo docker-compose up -d
+
+В браузере открываем http://localhost:6080/
