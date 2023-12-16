@@ -20,10 +20,10 @@ public class AnimalRegistry {
 
         do {
             printMenu();
-            System.out.print("Выберите опцию: ");
+            System.out.print("Выберите действие: ");
             try {
                 choice = scanner.nextInt();
-                scanner.nextLine(); // Считываем лишний перевод строки
+                scanner.nextLine();
 
                 switch (choice) {
                     case 1:
@@ -39,9 +39,6 @@ public class AnimalRegistry {
                         listAnimalsByBirthDate();
                         break;
                     case 5:
-                        // Добавьте свою реализацию навигации по меню
-                        break;
-                    case 6:
                         showAnimalCount();
                         break;
                     case 0:
@@ -52,12 +49,11 @@ public class AnimalRegistry {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Ошибка ввода. Пожалуйста, введите корректное значение.");
-                scanner.nextLine(); // Очистка буфера ввода
-                choice = -1; // Присвоение недопустимого значения для продолжения цикла
+                scanner.nextLine();
+                choice = -1;
             }
         } while (choice != 0);
 
-        // Закрываем сканнер после использования
         scanner.close();
     }
 
@@ -66,8 +62,7 @@ public class AnimalRegistry {
         System.out.println("2. Список команд животного");
         System.out.println("3. Обучение новым командам");
         System.out.println("4. Вывести список животных по дате рождения");
-        System.out.println("5. Навигация по меню");
-        System.out.println("6. Счетчик животных");
+        System.out.println("5. Счетчик животных");
         System.out.println("0. Выход");
     }
 
@@ -79,7 +74,6 @@ public class AnimalRegistry {
         System.out.print("Введите дату рождения животного (гггг-мм-дд): ");
         String birthDate = scanner.nextLine();
 
-        // Проверка правильности введенной даты
         if (!isValidDate(birthDate)) {
             System.out.println("Неверная дата.");
             return;
@@ -161,7 +155,7 @@ public class AnimalRegistry {
         sortedAnimals.sort(Comparator.comparing(Animal::getBirthDate));
         System.out.println("Список животных по дате рождения:");
         for (Animal animal : sortedAnimals) {
-            System.out.println(animal.getType() + animal.getName() + " (" + animal.getBirthDate() + ")");
+            System.out.println(animal.getClas() + animal.getType() + animal.getName() + " (" + animal.getBirthDate() + ")");
         }
     }
 

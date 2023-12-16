@@ -6,6 +6,6 @@ public class Cat extends Pets{
     }
     @Override
     public String getType(){
-        return "Pet Cat ";
+        return "Cat ";
     }
 }

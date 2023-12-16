@@ -6,6 +6,6 @@ class Camel extends PackAnimals {
     }
     @Override
     public String getType(){
-        return "PackAnimal Camel ";
+        return "Camel ";
     }
 }

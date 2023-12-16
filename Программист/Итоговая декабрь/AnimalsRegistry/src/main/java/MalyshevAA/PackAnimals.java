@@ -11,4 +11,8 @@ public abstract class PackAnimals extends Animal {
 //    public String getType(){
 //        return "PackAnimal Camel";
 //    }
+@Override
+public String getClas() {
+    return "PackAnimal ";
+}
 }

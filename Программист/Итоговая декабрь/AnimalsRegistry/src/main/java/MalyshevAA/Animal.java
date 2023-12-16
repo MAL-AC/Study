@@ -29,7 +29,12 @@ public abstract class Animal{
     public void train(String newCommand) {
         commands.add(newCommand);
     }
+
     public String getType() {
+        return "";
+    }
+
+    public String getClas() {
         return "";
     }
 }

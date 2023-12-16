@@ -8,6 +8,6 @@ class Horse extends PackAnimals {
     }
     @Override
     public String getType(){
-        return "PackAnimal Horse ";
+        return "Horse ";
     }
 }

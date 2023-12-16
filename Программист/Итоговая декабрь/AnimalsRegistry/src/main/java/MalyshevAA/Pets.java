@@ -9,5 +9,8 @@ public abstract class Pets extends Animal {
 //    public String getType(){
 //        return "PackAnimal Camel";
 //    }
-
+@Override
+public String getClas() {
+    return "Pet ";
+}
 }
