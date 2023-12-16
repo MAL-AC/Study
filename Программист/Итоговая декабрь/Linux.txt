@@ -1,0 +1,20 @@
+   62  ls
+   63  nano Pets
+   64  nano Pack_animals
+   65  cat Pets
+   66  cat Pack_animals 
+   69  cat Pets Pack_animals > test
+   70  cat test
+   71  mv test Human_friends
+   72  ls
+   73  mkdir test
+   74  ls
+   75  mv Human_friends test
+   76  ls
+   77  sudo apt update
+   78  sudo apt install mysql-server
+   79  sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.17-1_all.deb
+   80  sudo dpkg -i mysql-apt-config_0.8.17-1_all.deb
+   81  sudo apt update
+   84  sudo dpkg -r $(sudo dpkg -f mysql-apt-config_0.8.17-1_all.deb Package)
+   85  history
